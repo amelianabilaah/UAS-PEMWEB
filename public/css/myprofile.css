@@ -1,0 +1,54 @@
+body {
+    background-color: #ffffff;
+    
+}
+
+body a{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+body h3{
+    padding-top: 30px;
+}
+
+.kartu {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.03);
+    transition: all .3s;
+    background-color: #5e5960;
+    border: solid 8px #000000;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+   
+} 
+.kartu:hover {
+    background-color: #ffffff;
+    border: solid 8px #5e5960;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.foto {
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+tbody {
+font-size: 20px;
+font-weight: 300;
+color:rgb(0, 0, 0);
+}
+
+.biodata {
+margin-top: 30px;
+}
+
+.change{
+    padding-top: 20px;
+}

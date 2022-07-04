@@ -1,0 +1,29 @@
+.lokasi{
+    text-align: center;
+}
+
+.lokasi h2{
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida sans';
+}
+
+.lokasi select option{
+  
+    font-family: 'Lucida sans';
+    text-align: justify;
+    width: 100 px;
+    height: auto;
+   
+}
+
+.alamat td{
+  padding-right: 100px;
+  text-align: justify;
+ 
+}
+
+.alamat {
+    margin-left: 80px;
+}
+

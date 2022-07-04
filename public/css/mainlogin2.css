@@ -1,0 +1,85 @@
+.header div {
+    padding-top: 25px;
+}
+
+.header h1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Lucida Sans';
+    padding-top: 20px;
+  
+}
+
+li {
+    list-style: none;
+}
+
+.profile img{
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.carticon img{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.footer {
+    background-color: #a19f9f;
+    color:rgb(255, 255, 255);
+    height: 200px;
+    padding: 40px 40px;
+}
+
+.footer a, li, img {
+    text-decoration: none;
+    color: white;
+}
+  
+.footer-logo p{
+    font-size: 20px;
+}
+  
+.footer-list{
+    float: right;
+}
+
+.footer-list li{
+    padding-bottom: 11px;
+}
+
+.instagram img {
+    display: inline-block;
+}
+
+.instagram{
+    padding-bottom: 5px;
+}
+
+.whatsapp img {
+    display: inline-block;
+}
+
+.whatsapp{
+    padding-bottom: 5px;
+}
+
+.line img {
+    display: inline-block;
+}
+
+.line{
+    padding-bottom: 5px;
+}
+
+
+.btn btn-outline-dark a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.sosmed img {
+    display: inline-block;
+}

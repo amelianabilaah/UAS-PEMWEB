@@ -1,0 +1,26 @@
+
+.container table{
+    margin-left: 20px;
+}
+
+
+
+.btn btn-dark mb-3{
+    margin-top: 200px;
+
+}
+
+
+.btn btn-secondary{
+  
+    font-size: 10px;
+    padding: 10px 24px;
+    margin: 0 !important;
+  
+}
+
+.btn btn-danger{
+    margin-left: 20px;
+}
+
+

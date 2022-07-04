@@ -1,0 +1,48 @@
+.profile{
+    text-align: center;
+   
+}
+
+.kotak{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    border-radius: 20px;
+    border-style: none;
+    margin-left: 500px;
+    margin-top: 30px;
+}
+
+.kotak img{
+    padding-left: 4px;
+    padding-top: 20px;
+
+}
+.kotak p{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.table{
+    text-align: right;
+  
+
+}
+
+.datacustomer h3{
+    margin-top: 10px;
+    margin-left: 500px;
+    
+}
+
+.datacustomer a{
+    text-decoration: none;
+    color: black;
+    margin-left: 800px;
+    
+}
+
