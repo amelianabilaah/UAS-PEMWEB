@@ -1,0 +1,527 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    background-color: grey;
+    width: 260px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    transition: all ease-in .3s;
+}
+
+.sidebar.hide{
+    width: 87px;
+    transition: all ease-out .3s;
+}
+
+.main-content{
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+}
+
+.sidebar .description-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: rgb(0, 0, 0);   
+
+}
+.sidebar.hide .description-header{
+    display: none;
+
+}
+
+.sidebar a{
+    text-decoration: none;
+}
+
+.sidebar .header .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    background-color: white;
+    height: 40px;
+    box-sizing: border-box;
+
+}
+
+.sidebar .header .list-item icon{
+    margin-right: 12px;
+}
+
+.sidebar .header .illustration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px 0 22px 0;
+    box-sizing: border-box;
+
+}
+
+.sidebar.hide .illustration{
+    display: none;
+}
+
+.sidebar .main .list-item .description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 16px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+   
+}
+
+.sidebar.hide .main .list-item .description{
+    display: none;
+}
+
+.sidebar .main .list-item .icon{
+    margin-right: 12px;
+
+}
+
+.sidebar .main .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    padding: 12px 10px;
+    background-color: grey;
+    border-radius: 8px;
+    /*width: 212px;*/
+    box-sizing:border-box ;
+
+}
+
+.sidebar .main .list-item:hover{
+    background: white;
+    transition: all ease-in .2s;
+
+}
+
+/*Toogle menu*/
+
+#menu-button{
+    width: 32px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#menu-label{
+    position: relative;
+    display: block;
+    height: 20px;
+    cursor: pointer;
+}
+
+#menu-checkbox{
+    display: none;
+}
+
+#hamburger, #menu-label:after, #menu-label:before{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+
+}
+
+#menu-label:after, #menu-label:before{
+    content: "";
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) left;
+}
+
+#menu-label:before{
+    top: 0;
+}
+
+#menu-label:after{
+    top: 8px;
+}
+
+#hambuerger{
+    top: 16px;
+}
+
+#hamburger:before{
+    content: "MENU";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    left: 0;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#menu-checkbox:checked + #menu-label::before{
+    left: -39px;
+}
+
+#menu-checkbox:checked + #menu-label::after{
+    left: 39px;
+}
+
+
+#menu-checkbox:checked + #menu-label{
+    left: -39px;
+}
+
+
+#menu-checkbox:checked + #menu-label #hamburger::before{
+    animation: moveUpThenDown 0.8s ease 0.2s forwards,
+    shakeUp 0.8s ease 0.2s forwards,
+    shakedown 0.2s ease 0.8s forwards,
+    ;
+}
+
+@keyframes moveUpThenDown{
+    0%{
+
+    }
+    50%{
+        top: -27px;
+    }
+
+    100%{
+        top: -14px;
+    }
+}
+
+@keyframes shakeUp{
+    0%{
+        transform: rotateZ(0);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+
+    50%{
+        transform: rotateZ(0);
+    }
+    75%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(0);
+    }
+
+}
+
+@keyframes shakedown{
+    0%{
+        transform: rotateZ(0);
+    }
+    80%{
+        transform: rotateZ(3deg);
+    }
+
+    90%{
+        transform: rotateZ(-3deg);
+    }
+    100%{
+        transform: rotateZ(0);
+    }
+
+}
+
+/*Gamabar konten*/
+
+
+/*kotak produk*/
+.kotak{
+    margin-top: -40px;
+    margin-bottom: -100px;
+}
+    
+
+table{
+    margin: 5% auto;
+}
+.kotak1{
+    margin: 10px ;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 30px;
+  
+   
+}
+.kotak1 h2{
+    margin-left: 30px;
+
+}
+.kotak1 img{
+    display: block;
+    margin-left: 200px;
+    padding-top: 30px;
+    height: 50px;
+    width : auto;
+
+
+}
+
+.kotak1 p{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Signika Negative SC', sans-serif;
+    margin-left: 20px;
+
+}
+
+
+.kotak2{
+    margin: 10px ;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    background-color:grey;
+    border-radius: 30px;
+ 
+}
+.kotak2 h2{
+    margin-left: 30px;
+}
+
+.kotak2 img{
+    display: block;
+    margin-left: 200px;
+    padding-top: 30px;
+    height: 50px;
+    width : auto;
+}
+
+.kotak2 p{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Signika Negative SC', sans-serif;
+}
+
+.kotak3{
+    margin: 10px ;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    background-color:grey;
+    border-radius: 30px;
+
+}
+.kotak3 h2{
+    margin-left: 30px;
+}
+.kotak3 img{
+    display: block;
+    margin-left: 200px;
+    padding-top: 30px;
+    height: 50px;
+    width : auto;
+
+}
+
+.kotak3 p{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Signika Negative SC', sans-serif;
+}
+
+
+/*KOTAK KANAN*/
+
+.gambar h2{
+    margin-top: 150px;
+    margin-left: 70px;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: justify;
+
+}
+
+.gambar img{
+    width: 500px;
+    height: auto;
+    margin-left: 30px;
+    float: left;
+    margin-top: 10px;
+}
+
+
+.login{
+    width: 499px;
+    height: 550px;
+    background:grey;
+    border-radius: 50px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.login h4{
+    font-family: 'Signika Negative SC', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: -50px;
+    color: white;
+}
+
+
+
+.login form{
+    color: white;
+    margin-left: 40px;
+    margin-top: 200px;
+
+}
+
+.user button{
+    font-family: "montaga";
+    font-size: 25px;
+    color: rgb(57, 57, 62);
+    background-color: rgb(255, 255, 255);;
+    margin-top: -10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 55px;
+    width: 400px;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.user ::placeholder{
+    font-family: "montaga";
+    font-size: 25px;
+    color: rgb(57, 57, 62);
+}
+
+.user img{
+    float: left;
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 30px;
+    height: auto;
+}
+
+
+.submit button{
+    font-family: "inter";
+    font-size: 25px;
+    color: white;
+    background-color: rgb(116, 151, 204);
+    margin-top: 70px;
+    margin-left: 110px;
+    height: 61px;
+    width: 275px;
+    border-radius: 100px;
+    border-color: rgb(116, 151, 204);
+    border-style: solid;
+
+}
+
+.submit p{
+    color: white;
+    font-family: "inter";
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar{
+    float: right;
+    margin-top: -225px;
+    margin-right: 250px;
+    font-size: 28px; 
+
+}
+
+.sign{
+    font-family: 'Signika Negative SC', sans-serif;
+    font-size: 28px;
+    color: white;
+    background-color:rgb(154, 182, 224);
+    margin-top: 70px;
+    margin-left: 5px;
+    margin-right: -40px;
+    height: 50px;
+    width: 130px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.log{
+    font-family: 'Signika Negative SC', sans-serif;
+    font-size: 28px;
+    color: white;
+    background-color:rgb(43, 50, 120) ;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right: -150px;
+    height: 50px;
+    width: 130px;
+    border-radius: 15px;
+    border-color: rgb(43, 50, 120) ;
+    border-style: solid;
+    border-color: rgb(43, 50, 120) ;
+ 
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 22px;
+}
+
+.kunci img{
+    margin-left: 340px;
+    margin-top: -28px;
+}
+
+.keluar {
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 200px;
+    margin-left: 30px;
+    text-decoration: none;
+    
+}

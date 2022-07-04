@@ -1,0 +1,81 @@
+.shoppingcart {
+  height: 630px;
+  background-color: black;
+  margin-bottom: 200px;
+  border-radius: 20px;
+}
+
+.judulkotak {
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  text-align: center;
+  font-size: larger;
+}
+
+.tabelproduct {
+  color: rgb(255, 255, 255);
+  
+}
+
+.item {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.delbutton img {
+  padding-left: 30px;
+}
+
+.imgproduct img {
+  width: 100px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.minusbutton img {
+  width: 10px;
+  height: auto;
+  
+}
+
+.plusbutton img {
+  width: 10px; 
+  height: auto;
+}
+
+.qty input {
+  width: 25px;
+  text-align: center;
+}
+
+.tabelcart table{
+  padding-bottom: 50px;
+}
+
+.totalprice {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.items h5 {
+  padding-top: 15px;
+}
+
+.desproduk {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.checkout {
+  margin-top: 15px;
+  padding-top: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}

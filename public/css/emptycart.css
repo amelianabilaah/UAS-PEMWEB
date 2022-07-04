@@ -1,0 +1,45 @@
+.icon-wrapper {
+    height: 300px;
+    width: 400px;
+    background-color: #000000;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 450px;
+  }
+  
+  
+.content {
+    width: 33.3%;
+    float: left;
+}
+  
+.content img{
+    width: 200px;
+    height: auto;
+}
+
+
+.content-icon img {
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.empty {
+    width: 150px;
+    height: 50px;
+}
+
+.content p {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-left: 180px;
+    font-weight: bolder;
+
+
+  
+
+}
+
+
